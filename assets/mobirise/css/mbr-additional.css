@@ -1772,14 +1772,14 @@ body {
 }
 @media (max-width: 480px) {
   #header2-1 {
-    background-image: url("../../../assets/images/mobile web-01.jpg");
+    background-image: url("../../../assets/images/mobile1.png");
     background-repeat: no-repeat;
     background-size: 100% ;
   }
 }
 @media (min-width: 481px) {
   #header2-1 {
-    background-image: url("../../../assets/images/desk web-01.jpg");
+    background-image: url("../../../assets/images/desktop.png");
     background-repeat: no-repeat;
     /* background-size: contain ; */
   }

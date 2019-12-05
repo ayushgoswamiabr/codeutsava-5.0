@@ -1,0 +1,103 @@
+.container_gallery{
+    height: 700px;
+    width: auto;
+}
+.gallery_image img{
+    height: 600px;
+    margin-top: 2%;
+    
+}
+
+.button2 {
+    left: 45%;
+    position: absolute;
+    display: inline-block;
+    border: 2px solid #6f42c1;
+    border-radius: 20px;
+    color: #6f42c1;
+    text-align: center;
+    font-size: 20px;
+    padding: 2px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 1%;
+    font-family: 'Aleo' , serif;
+    height: 37px;
+  }
+  
+  .button2 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button2:hover span {
+    padding-right: 25px;
+  }
+  a {
+    color: #6f42c1;
+    text-decoration: none;
+  }
+  
+  a:hover 
+  {
+     color:#6f42c1; 
+     text-decoration:none; 
+     cursor:pointer;  
+  }
+  
+  .wrapper_button {
+    text-align: center;
+  }
+  
+  .button2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  @media screen and (max-width: 750px) {
+    .button2{
+      left: 33%;
+      margin-top: 3%;
+    }
+    .gallery_image img{
+        height: 270px;
+        width: 100%;
+    }
+    .container_gallery{
+        height: 370px;
+    }
+
+  }
+  @font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 300;
+    src: url(https://fonts.gstatic.com/s/materialicons/v42/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  }
+  
+ .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 0.9;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+  }

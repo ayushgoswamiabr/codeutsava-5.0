@@ -1,0 +1,35 @@
+#devfolio-apply-now {
+    left: 32%;
+  top: 75%;
+  position: absolute;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 2px solid rgb(59, 15, 134);
+    color: rgb(59, 15, 134);
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'SegoeUI Emoji', 'Segoe UI Symbol';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-align: center;
+    text-transform: none;
+    }
+    #devfolio-apply-now:not([disabled]) {
+    cursor: pointer;
+    }
+
+    @media screen and (max-width: 750px) {
+        #devfolio-apply-now{
+            left: 25%;
+          height: 9%;
+          position: absolute;
+          margin-top: 23%;
+        }
+      }
+      

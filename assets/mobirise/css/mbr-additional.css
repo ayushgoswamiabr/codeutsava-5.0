@@ -1772,14 +1772,14 @@ body {
 }
 @media (max-width: 480px) {
   #header2-1 {
-    background-image: url("../../../assets/images/mobile.png");
+    background-image: url("../../../assets/images/mobile1.png");
     background-repeat: no-repeat;
     background-size: 100% ;
   }
 }
 @media (min-width: 481px) {
   #header2-1 {
-    background-image: url("../../../assets/images/jumbotron.jpg");
+    background-image: url("../../../assets/images/desktop.png");
     background-repeat: no-repeat;
     /* background-size: contain ; */
   }
@@ -2129,7 +2129,7 @@ body {
 .cid-qTkAaeaxX5 {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #2e2e2e;
+  background-color: #2d3693;
 }
 @media (max-width: 767px) {
   .cid-qTkAaeaxX5 .content {
@@ -2191,5 +2191,22 @@ body {
   .cid-qTkAaeaxX5 .footer-lower .social-list {
     justify-content: center;
     -webkit-justify-content: center;
+  }
+}
+/*button*/
+#devfolio-apply-now{
+}
+#devfolio-apply-now .logo {
+  /* Please keep the color of Devfolio logo mark either whit
+  e (#FFFFFF) or black (#000000) */
+  fill: white | black;
+  }
+@media screen and (max-width: 750px) {
+  .button1{
+    right: 45%;
+    height: 9%;
+    width: 35%;
+    position: absolute;
+    margin-top: 23%;
   }
 }

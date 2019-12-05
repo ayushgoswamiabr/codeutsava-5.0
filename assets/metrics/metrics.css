@@ -1,0 +1,28 @@
+.metrics{
+    background: linear-gradient(to right,  rgb(59, 15, 134)  0%, rgb(86, 201, 255) 60%, #ffffff 120%);
+    width: 100%;
+    height: auto;
+    font-family: 'Aleo' , serif;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.col-sm{
+   
+    color: white;
+    text-align: center;
+    font-family :'Aleo' , serif;
+    font-size: 45px;
+}
+.hori_divider{
+    height: 10px;
+    border-bottom: 0.0625rem solid #ffffff;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_metrics_data{
+    background: linear-gradient(to right,  rgb(59, 15, 134) 0%, rgb(86, 201, 255) 60%, #ffffff 120%);
+}

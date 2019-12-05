@@ -19,6 +19,69 @@
   position: absolute;
 }
 
+
+#sponsor-fixed-div{
+	position: fixed;
+	right:4vw;
+	bottom:4vw;
+	margin-right: 20px;
+	z-index: 20000;
+}
+
+.btnss{
+    line-height: 1.5;
+    padding: 1px 5px;
+    
+}
+
+#sponsor-btn{
+	background-color: black;
+	width: 80px;
+	height: 80px;
+	color: white;
+	font-family: Lato, sans-serif;
+	border: solid black 5px;
+	border-radius: 50%;
+	font-size: 1.0rem;
+	transition: all 0.2s;
+	margin-top: 10px;
+    text-align: center;
+}
+
+#sponsor-btn:hover{
+	background-color: black;
+	width:120px;
+	height: 120px;
+	color: white;
+	font-family: Lato, sans-serif;
+	border: solid black 5px;
+	border-radius: 50%;
+	font-size: 1.3rem;
+}
+
+.sponsBrons{
+    height: 180px;
+    margin-top: 0px;
+    color: white;
+    
+    display: block;
+    background: linear-gradient(to right, #6f42c1 0%, #FF6C56 60%, #6f42c1 100%);
+   font-family: 'Open Sans', sans-serif;
+
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 0px;
+   
+}
+#sponsB{
+    
+    
+}
+
+
+
+
 .ball {
   width: 50px;
   height: 50px;
@@ -85,7 +148,6 @@
 #ball5 {
   background-color: #E3746B;
 }
-
 
 @keyframes translateX {
   100% {

@@ -86,7 +86,6 @@
   background-color: #E3746B;
 }
 
-
 @keyframes translateX {
   100% {
     transform: translateX(-150px);

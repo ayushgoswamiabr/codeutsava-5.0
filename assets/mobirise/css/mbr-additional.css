@@ -1772,14 +1772,14 @@ body {
 }
 @media (max-width: 480px) {
   #header2-1 {
-    background-image: url("../../../assets/images/mobile1.png");
+    background-image: url("../../../assets/images/mobile1.jpg");
     background-repeat: no-repeat;
     background-size: 100% ;
   }
 }
 @media (min-width: 481px) {
   #header2-1 {
-    background-image: url("../../../assets/images/desktop.png");
+    background-image: url("../../../assets/images/desktop2.jpg");
     background-repeat: no-repeat;
     /* background-size: contain ; */
   }
@@ -2199,7 +2199,7 @@ body {
 #devfolio-apply-now .logo {
   /* Please keep the color of Devfolio logo mark either whit
   e (#FFFFFF) or black (#000000) */
-  fill: white | black;
+  fill: black;
   }
 @media screen and (max-width: 750px) {
   .button1{

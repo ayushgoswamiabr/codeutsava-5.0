@@ -43,11 +43,19 @@
   width: 180px;
   height: 180px;
 }
-
+#Img2 img{
+    height: 200px;
+    width: 450px;
+}
 @media screen and (max-width: 750px) {
     .sponsorx img{
         width: 80%;
      
+    }
+    #Img2 img{
+        height: 150px;
+        width: 300px;
+        margin-left: -10%;
     }
     }
 #Imgx{
@@ -62,7 +70,7 @@
         margin-bottom: 0px;
     }
 }
-<!-- changes 25 jan 2019 4pm -->
+/* changes 25 jan 2019 4pm*/
 
 #container_theme{
     background-color: #fff;

@@ -7647,7 +7647,7 @@ button:hover:after {
 
 @media (max-width:991px) {
     .nit-banner4 {
-        background-image: url("../../images/mobile_new.png");
+        background-image: url("../../images/mobile_new.jpg");
         height: 100%; 
         background-position: initial;
         background-repeat: no-repeat;
@@ -9116,7 +9116,7 @@ button:hover:after {
 }
 @media (max-width:991px) {
     .nit-about-photo {
-        background-image: url("../img/AboutUs-mobile.png");
+        background-image: url("../img/AboutUs-mobile.jpg");
         height: 100%; 
         background-position: initial;
         background-repeat: no-repeat;
@@ -14167,13 +14167,4 @@ blockquote.nit-testi-single:before {
     font-size: 30px;
     line-height: 2.5;
 }
-}
-
-#previous{
-    margin-top: 20px;
-}
-
-.image-mid img{
-    padding: 20px;
-    margin: 0px auto 30px auto;
 }

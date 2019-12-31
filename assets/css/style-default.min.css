@@ -14168,3 +14168,12 @@ blockquote.nit-testi-single:before {
     line-height: 2.5;
 }
 }
+
+#previous{
+    margin-top: 20px;
+}
+
+.image-mid img{
+    padding: 20px;
+    margin: 0px auto 30px auto;
+}

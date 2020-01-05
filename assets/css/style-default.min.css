@@ -9381,7 +9381,8 @@ button:hover:after {
 }
 
 .nit-speakers2 .nit-inner {
-    background: rgb(11, 28, 51)
+    background-image: url(../../images/3304672.jpg);
+    background-size: cover;
 }
 
 .nit-speakers3 {

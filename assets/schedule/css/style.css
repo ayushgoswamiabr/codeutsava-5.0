@@ -612,3 +612,40 @@ body {
   a{
 	  cursor: pointer;
   }
+
+
+  /* border line */
+  .section-title{
+	  font-size: 50px;
+	  font-weight: bolder;
+	  padding-bottom: 20px;
+	  padding-top: 10px;
+  }
+  .section-title:before {
+	position: absolute;
+	content: '';
+	left: 15px;
+	bottom: 8px;
+	width: 48px;
+	height: 1px;
+	background-color: #6674A3;
+  }
+  
+  .section-title:after {
+	position: absolute;
+	content: '';
+	left: 0px;
+	bottom: 2px;
+	width: 48px;
+	height: 1px;
+	background-color: #6674A3;
+  }
+  
+  .section-title:before, .section-title:after {
+	left: 50%;
+	margin-left: -45px;
+  }
+  
+  .section-title:after {
+	margin-left: -30px;
+  }

@@ -9852,7 +9852,7 @@ button:hover:after {
 }
 
 .nit-milestone-about .nit-inner {
-    background: #151a1c;
+    background: #0b1c33;
   /*  background: #0b1c33;*/
     padding: 8rem 0
 }
@@ -14179,3 +14179,151 @@ blockquote.nit-testi-single:before {
     padding: 20px;
     margin: 0px auto 30px auto;
 }
+
+
+/*faq*/
+/* ================================= */
+  section h1 {
+    font-size: 36px;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    padding: 0 12px;
+  }
+  section p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    /* text-transform: capitalize; */
+    padding: 10px 12px;
+  }
+  
+  /* ================================= */
+  .container {
+    width: 100%;
+  }
+  
+  .Accordions {
+    display: block;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .Accordion_item {
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+    padding-bottom: 5px;
+  }
+  .Accordion_item:first-child {
+    margin-top: 50px;
+  }
+  .Accordion_item .title_tab {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding: 1px 30px;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    font-weight: bold;
+  }
+  .Accordion_item .title_tab .title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .Accordion_item .title_tab .title .icon {
+    position: absolute;
+    right: 1%;
+    top: calc(50% - 8px);
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    transform: rotate(-90deg);
+    transition: transform 0.3s ease-in;
+  }
+  @media  (max-width:768px){
+    .Accordion_item .title_tab .title .icon{
+        right : -5%;
+    }
+  }
+  .Accordion_item .title_tab .title .icon:before, .Accordion_item .title_tab .title .icon:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+  }
+  .Accordion_item .title_tab .title .icon:before {
+    top: 0;
+    left: 2px;
+    transform: rotate(-45deg);
+  }
+  .Accordion_item .title_tab .title .icon:after {
+    top: 0;
+    right: 2px;
+    transform: rotate(45deg);
+  }
+  
+  .inner_content {
+    width: 100%;
+    height: auto;
+    display: none;
+    overflow: hidden;
+  }
+  .inner_content p {
+    width: 98%;
+    margin: auto;
+    padding: 18px 15px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translate3d(0px, 60px, 0px);
+    transition: transform 0.6s cubic-bezier(0, 0.99, 0.44, 1.01), opacity 0.8s 0.1s cubic-bezier(0, 0.99, 0.44, 1.01);
+  }
+  
+  /* ================================= */
+  .Accordion_item .title_tab.active {
+    transition: background-color .3s ease-in;
+  }
+  .Accordion_item .title_tab.active .title .icon {
+    transform: rotate(0deg);
+    transition: transform .3s ease-in;
+  }
+  .Accordion_item .title_tab:hover {
+    background-color: rgb(238, 238, 238);
+    transition: background-color .3s ease-in;
+  }
+  .Accordion_item .inner_content p.show {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    transition: opacity 0.8s cubic-bezier(0, 0.99, 0.44, 1.01), transform 0.6s 0.1s cubic-bezier(0, 0.99, 0.44, 1.01);
+  }
+  
+  /* ================================= */
+  .inner_content p span {
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .inner_content p b {
+    color: #F44336;
+    font-size: 18px;
+  }
+  
+  /*changes*/
+  .spons-logo{
+      height: 300px;
+      max-width: 300px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 50px;
+    margin-bottom: 30px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: #fff;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+  .spons-logo:hover{
+      transform: scale(1.05);
+  }
+  /* changes */

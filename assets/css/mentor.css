@@ -27,7 +27,13 @@
     height: 0;
     padding-bottom: calc(100% - 16px);
     margin-bottom: 9em;
+    transition: all 0.3s ease-in-out;
 }
+.material-card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
 .material-card h2 {
     position: absolute;
     top: calc(100% - 16px);
@@ -44,6 +50,7 @@
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    box-shadow: 0 8px 6px -6px rgb(73, 73, 73);
 }
 .material-card h2 span {
     display: block;

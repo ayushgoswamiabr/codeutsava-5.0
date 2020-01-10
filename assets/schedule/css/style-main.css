@@ -1367,9 +1367,11 @@ input:required {
   text-align: center;
   display: inline-block;
   /*background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
-  margin-top: 31em;
+  margin-top: 18em;
+  box-shadow: 0 0 20px 0 #3770FF;
   
 }
+
 
 #devfolio-apply-now:not([disabled]) {
   cursor: pointer;
@@ -1384,15 +1386,34 @@ input:required {
                 e (#FFFFFF) or black (#000000) */
   fill: white;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 768px) {
   #devfolio-apply-now {
-    top: 5em;
+    top: 7em;
   left: 25%;
 
   }
 }
+@media only screen and (min-width :968px){
+  #devfolio-apply-now {
+    top: 19em;
+  left: 32%;
 
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #devfolio-apply-now {
+    top: 10em;
+    left: 15%;
 
+  }
+}
+.devu{
+  transition: all 900ms ease-in-out;
+}
+.devu img:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
 /* :: Footer Area CSS */
 .footer-area {
   position: relative;

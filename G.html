@@ -1,57 +1,155 @@
-<!-- G1 -->
-<div class="nit-banner-style">
-    <div class="nit-inner nit-inner-fixed">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="nit-banner-info">
-              <!--nit-banner-info-center nit-banner-info-black nit-banner-info-big nit-banner-info-bg-->
-              <!-- COUNTDOWN -->
-              <!-- <div class="nit-countdown-area"> -->
-              <!-- Date Format :"Y/m/d" || For Example: 1017/10/5  -->
-              <!-- <div id="nit-countdown" data-date="2019/03/23"></div> -->
-              <!-- </div> -->
-              <!-- <h2 class="title">CODEUTSAVA <span><b>4</b><b>.</b><b>0</b></span></h2> -->
+<style>
+body {
+  background-color: #100e17;
+  font-family: 'Open Sans', sans-serif;
+}
 
-              <!-- <h2 class="">CODEUTSAVA <span><b>4</b><b>.</b><b>0</b></span></h2> -->
-              <!-- <h1 class="glitch" data-text="CODEUTSAVA 4.0">CODEUTSAVA 4.0</h1> -->
-              <!-- <div class="content">
-                <div class="content__container">
-                  <p class="content__container__text">
-                    Hello
-                  </p>
-                  
-                  <ul class="content__container__list">
-                    <li class="content__container__list__item">world !</li>
-                    <li class="content__container__list__item">bob !</li>
-                    <li class="content__container__list__item">users !</li>
-                    <li class="content__container__list__item">everybody !</li>
-                  </ul>
-                </div>
-              </div> -->
-              <!-- <h3 class="location"><i class="fa fa-map-marker"></i> BML Munjal University, Gurugram.</h3> -->
-              <!-- <h3 class="date"><i class="fa fa-calendar"></i> 23 - 24 March, 2019</h3> -->
-              <!-- <div class="action-area">
-                <div class="nit-video-area">
-                  <a id="devfolio-apply-now" class="nit-btn nit-btn-red" target="_blank">
-                    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46"
-                      style="height:24px;width:24px;margin-right:8px">
-                      <path
-                        d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.051.05.08 2.18.08 3.34z" />
-                      <path
-                        d="M110.93 55.87A55.43 55.43 0 01 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z" />
-                      </svg>
-                    Apply with Devfolio
-                  </a>
-                  <a class="nit-btn" target="_blank" href="https://bit.ly/2DZL0xz">Sponsor Us</a>
-                </div> -->
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--//.ROW-->
-      </div>
-      <!-- //.CONTAINER -->
+.container {
+  position: absolute;
+  height: 300px;
+  width: 600px;
+  top: 60px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.track_card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+/*   margin-left: -50px; */
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.track_card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.track_card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.track_card:hover ~ .track_card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.track_card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 60px);
+}
+
+.stroke {
+  stroke: white;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+  transition: 0.6s ease-out;
+}
+
+svg {
+  fill: #17141d;
+  stroke-width: 2px;
+}
+
+.track_card:hover .stroke {
+  stroke-dashoffset: 100;
+  transition: 0.6s ease-out;
+}
+</style>
+
+<div class="container">
+  <div class="track_card">
+    <h3 class="title">track_card 1</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
     </div>
-    <!-- //.INNER -->
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
   </div>
+  <div class="track_card">
+    <h3 class="title">track_card 2</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+  </div>
+  <div class="track_card">
+    <h3 class="title">track_card 3</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+  </div>
+  <div class="track_card">
+    <h3 class="title">track_card 4</h3>
+    <div class="bar">
+      <div class="emptybar"></div>
+      <div class="filledbar"></div>
+    </div>
+    <div class="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle class="stroke" cx="60" cy="60" r="50"/>
+    </svg>
+    </div>
+  </div>
+</div>

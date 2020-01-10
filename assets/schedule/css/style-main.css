@@ -1368,8 +1368,10 @@ input:required {
   display: inline-block;
   /*background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
   margin-top: 18em;
+  box-shadow: 0 0 20px 0 #3770FF;
   
 }
+
 
 #devfolio-apply-now:not([disabled]) {
   cursor: pointer;
@@ -1405,8 +1407,13 @@ input:required {
 
   }
 }
-
-
+.devu{
+  transition: all 900ms ease-in-out;
+}
+.devu img:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
 /* :: Footer Area CSS */
 .footer-area {
   position: relative;

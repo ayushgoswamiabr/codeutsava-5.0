@@ -14446,7 +14446,8 @@ blockquote.nit-testi-single:before {
     height: inherit;
     border-radius: 40px;
     /* background: linear-gradient(135deg, #622774 0%,#c53364 100%); */
-    background: linear-gradient(135deg, #F36265,#E91E63);
+    /* background: linear-gradient(135deg, #F36265,#E91E63); */
+    background: linear-gradient(135deg, #E3E3E3 0%,#adbfd4 100%);
     /* background: linear-gradient(270deg, #622774, #c53364); */
 /* background-size: 400% 400%;
 

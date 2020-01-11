@@ -14230,6 +14230,7 @@ blockquote.nit-testi-single:before {
     font-size: 20px;
     letter-spacing: 1px;
     position: relative;
+    font-weight: 400;
   }
   .Accordion_item .title_tab .title .icon {
     position: absolute;
@@ -14326,9 +14327,6 @@ blockquote.nit-testi-single:before {
 }
   .spons-logo:hover{
       transform: scale(1.05);
-  }
-  .title{
-      font-weight: 400;
   }
   /* changes */
 /* problem statment */

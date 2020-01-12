@@ -14230,6 +14230,7 @@ blockquote.nit-testi-single:before {
     font-size: 20px;
     letter-spacing: 1px;
     position: relative;
+    font-weight: 400;
   }
   .Accordion_item .title_tab .title .icon {
     position: absolute;
@@ -14291,7 +14292,7 @@ blockquote.nit-testi-single:before {
     transition: transform .3s ease-in;
   }
   .Accordion_item .title_tab:hover {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(250, 250, 250);
     transition: background-color .3s ease-in;
   }
   .Accordion_item .inner_content p.show {
@@ -14326,9 +14327,6 @@ blockquote.nit-testi-single:before {
 }
   .spons-logo:hover{
       transform: scale(1.05);
-  }
-  .title{
-      font-weight: 400;
   }
   /* changes */
 /* problem statment */

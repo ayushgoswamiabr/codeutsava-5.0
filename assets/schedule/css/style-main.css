@@ -1378,7 +1378,7 @@ input:required {
 }
 
 #devfolio-apply-now:hover {
-  background-color: #2954BF !important;
+  background-color: rgb(12, 74, 231) !important;
 }
 
 #devfolio-apply-now .logo {

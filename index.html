@@ -79,7 +79,7 @@
       position: absolute;
       content: '';
       width: 2px;
-      height: calc(100% + 25px);
+      height: calc(100% + -87px);
       /* background: rgb(138, 145, 150); */
       /* background: -moz-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%); */
       /* background: -webkit-linear-gradient(left, rgba(138, 145, 150, 1) 0%, rgba(122, 130, 136, 1) 60%, rgba(98, 105, 109, 1) 100%); */
@@ -241,6 +241,126 @@
       font-style: italic;
     }
   </style>
+  <!-- timeline pages -->
+  <style>
+  
+  .prev {
+        width: 50%;
+        padding: 5px 5px 5px 5px;
+        background-color: #6f42c1;
+        /* border:1px solid #d78423; */
+        /* font-family: 'Oswald', sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        /* font-style: italic; */
+        /* left: 38px; */
+        top: -2px;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
+        position: relative;
+        /* border-radius: 10px; */
+        color: black;
+        z-index: 1;
+        cursor: pointer;
+        color:#fff;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-right: 0px;
+
+
+    
+    }
+    .next {
+        width: 50%;
+        padding: 5px 5px 5px 5px;
+        background-color: #fff;
+        /* border: 1px solid #fff; */
+        /* font-family: 'Oswald', sans-serif; */
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        /* font-style: italic; */
+        /* left: 500px; */
+        top: -36px;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
+        position: relative;
+        /* border-radius: 10px; */
+        color: black;
+        z-index: 1;
+        float:right;
+        cursor: pointer;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-left: 0px;
+
+    
+    }
+
+    .next_prev {
+        width:100%;
+        padding: 10px 40px;
+        
+    }
+    @media screen and (max-width:600px){
+.next_prev {
+    padding-left: 70px;
+    padding-right: 25px;
+}}
+  </style>
+  <script>
+      let timelinePage = 0;
+function next(){
+switch(timelinePage){
+    case 0: document.getElementById("timeline_1").style.display = "none";
+            document.getElementById("timeline_2").style.display = "block";
+            document.getElementById("next").style.backgroundColor = "#6f42c1";
+            document.getElementById("prev").style.backgroundColor = "#fff";
+            document.getElementById("next").style.color = "#fff";
+            document.getElementById("prev").style.color = "#000";
+            timelinePage++;
+            break;
+//     case 1: document.getElementById("two").style.display = "none";
+//             document.getElementById("three").style.display = "block";
+// timelinePage++;
+//             break;
+    // case 2: document.getElementById("three").style.display = "none";
+    //         document.getElementById("four").style.display = "block";
+    //         timelinePage++;
+    //         break;
+    default: 
+            break;
+   
+}
+}
+function prev(){
+switch(timelinePage){
+    case 1: document.getElementById("timeline_1").style.display = "block";
+            document.getElementById("timeline_2").style.display = "none";
+            document.getElementById("prev").style.backgroundColor = "#6f42c1";
+            document.getElementById("next").style.backgroundColor = "#fff";
+            document.getElementById("prev").style.color = "#fff";
+            document.getElementById("next").style.color = "#000";
+            
+            timelinePage--;
+            break;
+//     case 2: document.getElementById("two").style.display = "block";
+//             document.getElementById("three").style.display = "none";
+// timelinePage--;
+//             break;
+    // case 3: document.getElementById("three").style.display = "block";
+    //         document.getElementById("four").style.display = "none";
+    //         timelinePage--;
+    //         break;
+    default: 
+            break;
+   
+}
+}
+  </script>
 
   <!-- MENTOR -->
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
@@ -941,32 +1061,39 @@
                   <span class="step-text">Events Timeline</span>
                 </h2>
                 <section>
+                  <div class="next_prev">
+                    <div class = "prev" id="prev" onclick="prev()">Day 1</div>
+            
+                    <div class = "next" id="next" onclick="next()">Day 2</div>
+                </div>
                   <div style="background-color: #0e2039;" class="container" id="nit-timeline">
-                  <div class="timeline">
+                  <div class="timeline" id="timeline_1">
                     <div class="timeline-month">
-                      January, 2020
+                      18 January
                       <span>3 Entries</span>
                     </div>
 
 
           <div class="timeline-section">
                       <div class="timeline-date">
-                        3<sup>rd</sup>, Friday
+                        11:15<sup><small>AM</small></sup>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="timeline-box">
                             <div class="box-title">
-                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>BLANK CODING
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Opening Ceremony
                             </div>
                             <div class="box-content">
-                              <div class="box-item">Code Utsava 4.0 presenting you "Blank Coding" which can be a dawn for your journey to become a web developer.
-                                Jump in to this opportunity of making frond-end web development even without having any technical background as we could help you by providing guidelines to get through your journey of web development.</div>
+                              <div class="box-item">
+                                <!-- Code Utsava 4.0 presenting you "Blank Coding" which can be a dawn for your journey to become a web developer.
+                                Jump in to this opportunity of making frond-end web development even without having any technical background as we could help you by providing guidelines to get through your journey of web development. -->
+                              </div>
                             </div>
                             
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                           <div class="timeline-box">
                             <div class="box-content">
                               <div class="box-item">Register yourself:
@@ -974,7 +1101,7 @@
                             </div>
                             
                           </div>
-                        </div>
+                        </div> -->
       
             
                       </div>
@@ -984,23 +1111,23 @@
       
                     <div class="timeline-section">
                       <div class="timeline-date">
-                        7<sup>th</sup>, Tuesday
+                        12:00<sup><small>PM</small></sup>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="timeline-box">
                             <div class="box-title">
-                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>CODE_HEIST
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Hackathon Commencement
                             </div>
                             <div class="box-content">
                               <div class="box-item">
-                                If debugging is the process of removing software bugs, then programming must be the process of putting them in. Want to test how many bugs you can actually put in well here's a chance for you. Codeutsava presents "CODEHEIST" ; an online coding contest on Codechef on 7th January from 9:30 PM to 12:00 AM IST. 
+                                <!-- If debugging is the process of removing software bugs, then programming must be the process of putting them in. Want to test how many bugs you can actually put in well here's a chance for you. Codeutsava presents "CODEHEIST" ; an online coding contest on Codechef on 7th January from 9:30 PM to 12:00 AM IST.  -->
                               </div>
                             </div>
                             
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                           <div class="timeline-box">
                             <div class="box-content">
                               <div class="box-item">Contest Link:
@@ -1008,7 +1135,7 @@
                             </div>
                             
                           </div>
-                        </div>
+                        </div> -->
                       </div>
                     </div>
                     
@@ -1017,23 +1144,25 @@
             
                     <div class="timeline-section">
                       <div class="timeline-date">
-                        Till 13<sup>th</sup>, Monday
+                        02:00<sup><small>PM</small></sup>
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="timeline-box">
                             <div class="box-title">
-                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>CODEBLOGS
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Lunch
                             </div>
                             <div class="box-content">
-                              <div class="box-item">So much complexity in technology comes from trying to make one thing do two things , learning and help others in learning..
+                              <div class="box-item">
+                                <!-- So much complexity in technology comes from trying to make one thing do two things , learning and help others in learning..
                                 Codeutsava presents you a blogging competition "CODEBLOGS" .
-                                So what are you waiting for..embrace yourself and become successful blogger to win startling prizes...</div>
+                                So what are you waiting for..embrace yourself and become successful blogger to win startling prizes... -->
+                              </div>
                             </div>
                             
                           </div>
                         </div>
-                        <div class="col-sm-4">
+                        <!-- <div class="col-sm-4">
                           <div class="timeline-box">
 
                             <div class="box-content">
@@ -1045,7 +1174,163 @@
                             </div>
                             
                           </div>
+                        </div> -->
+                        
+            
+                      </div>
+            
+                    </div>
+            
+                    <div class="timeline-section">
+                      <div class="timeline-date">
+                        09:00<sup><small>PM</small></sup>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="timeline-box">
+                            <div class="box-title">
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Dinner
+                            </div>
+                            <div class="box-content">
+                              <div class="box-item">
+                                <!-- So much complexity in technology comes from trying to make one thing do two things , learning and help others in learning..
+                                Codeutsava presents you a blogging competition "CODEBLOGS" .
+                                So what are you waiting for..embrace yourself and become successful blogger to win startling prizes... -->
+                              </div>
+                            </div>
+                            
+                          </div>
                         </div>
+                        <!-- <div class="col-sm-4">
+                          <div class="timeline-box">
+
+                            <div class="box-content">
+                              <div class="box-item">Register yourself at:
+                                <a  style="color:aqua" href="https://forms.gle/Qq5ekgFGxX8Zk7TU6" target="_blank">Click Here</a></div>
+
+                                Please follow the guidelines here to get your blog published:
+                                <a style="color:aqua" href="https://www.facebook.com/codeutsava/photos/a.671351783044914/1367019696811449/?type=3&theater" target="_blank">Click Here</a>
+                            </div>
+                            
+                          </div>
+                        </div> -->
+                        
+            
+                      </div>
+            
+                    </div>
+                 
+            
+                  </div>
+                  <!-- second -->
+                  <div class="timeline" id="timeline_2" style="display: none;">
+                    <div class="timeline-month">
+                      19 January
+                      <span>3 Entries</span>
+                    </div>
+
+
+          <div class="timeline-section">
+                      <div class="timeline-date">
+                        09:30<sup><small>AM</small></sup>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="timeline-box">
+                            <div class="box-title">
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>First Round Judging
+                            </div>
+                            <div class="box-content">
+                              <div class="box-item">
+                                <!-- Code Utsava 4.0 presenting you "Blank Coding" which can be a dawn for your journey to become a web developer.
+                                Jump in to this opportunity of making frond-end web development even without having any technical background as we could help you by providing guidelines to get through your journey of web development. -->
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <div class="timeline-box">
+                            <div class="box-content">
+                              <div class="box-item">Register yourself:
+                               <a style="color:aqua" href="http://bit.ly/reg_blankcoding" target="_blank">Click Here</a></div>
+                            </div>
+                            
+                          </div>
+                        </div> -->
+      
+            
+                      </div>
+            
+                    </div>
+                      
+      
+                    <div class="timeline-section">
+                      <div class="timeline-date">
+                        02:00<sup><small>PM</small></sup>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="timeline-box">
+                            <div class="box-title">
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Second Round Judging
+                            </div>
+                            <div class="box-content">
+                              <div class="box-item">
+                                <!-- If debugging is the process of removing software bugs, then programming must be the process of putting them in. Want to test how many bugs you can actually put in well here's a chance for you. Codeutsava presents "CODEHEIST" ; an online coding contest on Codechef on 7th January from 9:30 PM to 12:00 AM IST.  -->
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <div class="timeline-box">
+                            <div class="box-content">
+                              <div class="box-item">Contest Link:
+                               <a style="color:aqua" href="http://bit.ly/code_heist" target="_blank">Click Here</a></div>
+                            </div>
+                            
+                          </div>
+                        </div> -->
+                      </div>
+                    </div>
+                    
+                   
+            
+            
+                    <div class="timeline-section">
+                      <div class="timeline-date">
+                        04:00<sup><small>PM</small></sup>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="timeline-box">
+                            <div class="box-title">
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Hacking Stops
+                            </div>
+                            <div class="box-content">
+                              <div class="box-item">
+                                <!-- So much complexity in technology comes from trying to make one thing do two things , learning and help others in learning..
+                                Codeutsava presents you a blogging competition "CODEBLOGS" .
+                                So what are you waiting for..embrace yourself and become successful blogger to win startling prizes... -->
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <div class="timeline-box">
+
+                            <div class="box-content">
+                              <div class="box-item">Register yourself at:
+                                <a  style="color:aqua" href="https://forms.gle/Qq5ekgFGxX8Zk7TU6" target="_blank">Click Here</a></div>
+
+                                Please follow the guidelines here to get your blog published:
+                                <a style="color:aqua" href="https://www.facebook.com/codeutsava/photos/a.671351783044914/1367019696811449/?type=3&theater" target="_blank">Click Here</a>
+                            </div>
+                            
+                          </div>
+                        </div> -->
                         
             
                       </div>
@@ -1054,7 +1339,44 @@
             
             
                  
+                    <div class="timeline-section">
+                      <div class="timeline-date">
+                        05:45<sup><small>PM</small></sup>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="timeline-box">
+                            <div class="box-title">
+                              <i class="fa fa-snowflake-o text-success" aria-hidden="true"></i>Result Declaration
+                            </div>
+                            <div class="box-content">
+                              <div class="box-item">
+                                <!-- So much complexity in technology comes from trying to make one thing do two things , learning and help others in learning..
+                                Codeutsava presents you a blogging competition "CODEBLOGS" .
+                                So what are you waiting for..embrace yourself and become successful blogger to win startling prizes... -->
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <!-- <div class="col-sm-4">
+                          <div class="timeline-box">
+
+                            <div class="box-content">
+                              <div class="box-item">Register yourself at:
+                                <a  style="color:aqua" href="https://forms.gle/Qq5ekgFGxX8Zk7TU6" target="_blank">Click Here</a></div>
+
+                                Please follow the guidelines here to get your blog published:
+                                <a style="color:aqua" href="https://www.facebook.com/codeutsava/photos/a.671351783044914/1367019696811449/?type=3&theater" target="_blank">Click Here</a>
+                            </div>
+                            
+                          </div>
+                        </div> -->
+                        
             
+                      </div>
+            
+                    </div>
                   </div>
                 </div></div>
                   <!--Roshan for you do not remove section-->

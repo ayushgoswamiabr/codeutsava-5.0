@@ -14790,3 +14790,88 @@ nav ul li {
     }
   }
   */
+/* campus */
+.w3-container{
+    padding: 0 !important;
+}
+.w3{
+    height: 18px;
+    
+}
+.imgb{
+    border : 1px solid white !important;
+    border-radius: 10px;
+    height: 40px;
+    width: 70px;
+    background-size: cover;
+    transition: .3s ease-in-out;
+}
+.imgb1{
+    background-image: url("../../campus/colg1.jpeg");
+}
+.imgb2{
+    background-image: url("../../campus/colg2.jpeg"); 
+}
+.imgb3{
+    background-image: url("../../campus/hostel1.jpeg");
+}
+.imgb4{
+    background-image: url("../../campus/raipur1.jpeg");
+}
+.imgb:hover{
+    transform: scale(1.08);
+}
+#campus1{
+    padding-bottom: 10px;
+}
+.imgbA{
+    height: 400px;
+    background-image: url("../../campus/colg1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgbB{
+    height: 400px;
+    background-image: url("../../campus/colg2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgbC{
+    height: 400px;
+    background-image: url("../../campus/hostel1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imgbD{
+    height: 400px;
+    background-image: url("../../campus/raipur1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer ul{
+    margin-bottom: 0 !important;
+}
+@media screen and (max-width:768px){
+   .w3-modal{
+       max-height: 300px;
+   }
+    .scroll{
+        right: 5px !important;
+        padding-top:10px !important;
+        padding-bottom:10px !important;
+        padding-left:12px !important;
+        padding-right:12px !important;
+    }
+    #campus1{
+        float: left;
+    }
+    #campus1 .col-sm-2{
+        padding-bottom: 5px;
+    }
+    #campus2 .col-sm-2{
+        padding-bottom: 5px;
+    }
+    .imgbA,.imgbB,.imgbC,.imgbD{
+      background-size: contain;
+    }
+}

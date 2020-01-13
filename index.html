@@ -68,6 +68,8 @@
     <!--dev button-->
     <link ref="stylesheet" href="assets/css/dev-button.css">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <style>
     .timeline {
       margin-top: 20px;
@@ -521,11 +523,60 @@ switch(timelinePage){
 *:after {
   box-sizing: border-box;
 }
+/* scroll up */
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+  right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#2862b3;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left:17px;
+  padding-right:17px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+  -o-transition: 0.5s; 
+  border-radius: 50%;		
+}
+.scroll:hover {
+	background:#55C1AA;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+  padding-top:-10px;
+  color: black;
+}
+.scroll .fa {
+  color: white;
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
 
 </style>
 </head>
 
 <body class="home">
+
   <!-- PRELOADER -->
   <div class="pre-loader">
     <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
@@ -536,6 +587,7 @@ switch(timelinePage){
     </div>
   </div>
 <!-- PRELOADER ENDS -->
+
   <!-- <div class="nit-container "> -->
     <!--HEADER-->
     <header>
@@ -2539,13 +2591,83 @@ model.
             <a href="https://www.linkedin.com/in/codeutsavanitrr" target="_blank"><i class="fab fa-linkedin-in"></i></a>
         </li>
     </ul>
+    <ul>
+      <li style="font-size: 18px;text-align: center;"><b>CAMPUS</b></li>
+      <li>
+        <div class="w3-container">
+         <div class="row" id="campus1">
+           <div class="col-sm-2"><button onclick="document.getElementById('id01').style.display='block'" class="w3-button imgb imgb1"></button></div>
+           <div class="col-sm-2"></div>
+           <div class="col-sm-2"><button onclick="document.getElementById('id02').style.display='block'" class="w3-button imgb imgb2"></button></div>
+         </div>
+         <div class="row" id="campus2">
+          <div class="col-sm-2"><button onclick="document.getElementById('id03').style.display='block'" class="w3-button imgb imgb3"></button></div>
+          <div class="col-sm-2"></div>
+          <div class="col-sm-2"><button onclick="document.getElementById('id04').style.display='block'" class="w3-button imgb imgb4"></button></div>
+        </div>
+          
+        
+          <div id="id01" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h1 class="w3"></h1>
+              </header>
+              <div class="w3-container">
+                <div class="imgbA"></div>
+              </div>
+            </div>
+          </div>
+          <div id="id02" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('id02').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h1 class="w3"></h1>
+              </header>
+              <div class="w3-container">
+                <div class="imgbB"></div>
+              </div>
+            </div>
+          </div>
+          <div id="id03" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('id03').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h1 class="w3"></h1>
+              </header>
+              <div class="w3-container">
+                <div class="imgbC"></div>
+              </div>
+            </div>
+          </div>
+          <div id="id04" class="w3-modal w3-animate-opacity">
+            <div class="w3-modal-content w3-card-4">
+              <header class="w3-container w3-black"> 
+                <span onclick="document.getElementById('id04').style.display='none'" 
+                class="w3-button w3-large w3-display-topright">&times;</span>
+                <h1 class="w3"></h1>
+              </header>
+              <div class="w3-container">
+                <div class="imgbD"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </li>
+  </ul>
 				
 </div>
+
 </footer>    
-    
 <!--FOOTER END-->
           
-
+<div class='scrolltop'>
+  <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
 
   <!-- JQUERY  -->
   <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
@@ -2733,7 +2855,16 @@ $('.handle').on('click', function() {
   $('nav ul').toggleClass('showing')
 });
 </script>
-
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 50 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
+</script>
 </body>
 
 </html>

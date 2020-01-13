@@ -7233,9 +7233,6 @@ button:hover:after {
     color: #fff
 }
 
-.nit-header {
-    border-top: 1px solid transparent
-}
 
 .nit-header-position {
     width: 100%
@@ -14611,7 +14608,7 @@ color: white;
     margin-bottom: 2rem;
   }
   
-  .linkedin__text{ 1 conflict 
+  .linkedin__text{
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -14747,4 +14744,49 @@ animation: AnimationName 10s ease infinite; */
       text-decoration: none;
       outline: none;
   }
+/* nav 
+nav ul{
+    float: right;
+}
+nav ul li {
+    display:inline-block;
+    padding: 20px;
+    font-size: 20px;
+  }
+  
+  nav ul li:hover {
+    background-color: #399077;
+  }
 
+  .handle {
+    width:100%;
+    background: #005c48;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    cursor:pointer;
+    color:white;
+    display:none
+  }
+  
+  @media screen and (max-width:600px) {
+    nav ul {
+      max-height:0;
+    }
+    
+    .showing {
+      max-height: 20em;
+    }
+    
+    nav ul li {
+      box-sizing:border-box;
+      width:100%;
+      padding:15px;
+      text-align:center;
+    }
+    
+    .handle {
+      display:block;
+    }
+  }
+  */

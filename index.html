@@ -593,20 +593,13 @@ switch(timelinePage){
     <header>
       <div id="nit-header" class="nit-header">
         <div class="nit-header-position nit-header-position-white nit-header-position-fixed ">
-          <div class="nit-container">
-            <!-- <nav>
+          <div class="header-logo">
               <ul>
-                <a href="#"><li>HOME</li></a>
-                <a href="#"><li>ABOUT</li></a>
-                <a href="#"><li>METRICS</li></a>
-                <a href="#"><li>SCHEDULE</li></a>
-                <a href="#"><li>MENTORS</li></a>
-                <a href="#"><li>FAQ</li></a>
-                <a href="#"><li>CONTACT</li></a>
-              </ul>
-               <div class="handle">Menu</div>
-            </nav> -->
-          </div>
+                <a ><li><img class="nav-img1" src="images/nav/nitrr.gif"></li></a>
+                <a ><li><img class="nav-img2" src="images/nav/CODEUTSAVA_WHITE.png"></li></a>
+                <a ><li><img class="nav-img3" src="images/nav/logo2.png"></li></a>
+                <a ><li><img class="nav-img4" src="images/nav/teqip3.png"></li></a>
+              </ul></div>
         </div>
       </div>
     </header>
@@ -655,10 +648,10 @@ switch(timelinePage){
         list-style-type: none;
         padding: 1em;
         text-transform: uppercase;
-        color: #e91e63;
+        color: #000000;
         font-weight: bold;
         /* background-color: #333; */
-        background-color: #151a1c;
+        /* background-color: #d1d6d8; */
         /* box-shadow: 0px 0px 2px #000; */
       
       }
@@ -672,9 +665,9 @@ switch(timelinePage){
         padding-top: 6%;
         font-size: 4.5rem;
         border-radius: 100%;
-        color: #48c4be;
+        color: #000000;
         border: 1px solid #607d8ba6;
-        box-shadow: 0 0 5px #0f1919 inset;
+        /* box-shadow: 0 0 5px #0f1919 inset; */
         height: 72px;
         width: 72px;
       }
@@ -683,13 +676,13 @@ switch(timelinePage){
         padding-bottom: 20px;
         text-align: center;
         /* background-color: rgb(74, 53, 45); */
-        background-color: #151a1c;
+        background-color: #ffffff;
         background-blend-mode: multiply;
       }
       .t_spin{
         content: '';
         border:2px solid #00000000;
-        border-top: 2px solid #e91e63;
+        border-top: 2px solid #000000;
         border-radius: 100%;
         font-size: 4.5rem;
         position: absolute;
@@ -713,7 +706,7 @@ switch(timelinePage){
       .t_spin_m{
         content: '';
         border:2px solid #00000000;
-        border-top: 2px solid #e91e63;
+        border-top: 2px solid #000000;
         border-radius: 100%;
         font-size: 4.5rem;
         position: absolute;
@@ -727,7 +720,7 @@ switch(timelinePage){
       .t_spin_h{
         content: '';
         border:2px solid #00000000;
-        border-top: 2px solid #e91e63;
+        border-top: 2px solid #000000;
         border-radius: 100%;
         font-size: 4.5rem;
         position: absolute;
@@ -745,7 +738,7 @@ switch(timelinePage){
       .t_spin_d{
         content: '';
         border:2px solid #00000000;
-        border-top: 2px solid #e91e63;
+        border-top: 2px solid #000000;
         border-radius: 100%;
         font-size: 4.5rem;
         position: absolute;
@@ -757,20 +750,7 @@ switch(timelinePage){
         width: 72px;
       }
       </style>
-          <section>
-            <div class="container-fluid timer-container">
-              <!-- <h1>some heading:::</h1> -->
-              <ul>
-                <li class="timer-li"><div class="t_spin_d">07</div><span id="days"></span>days</li>
-                <li class="timer-li"><div class="t_spin_h">07</div><span id="hours"></span>Hours</li>
-                <li class="timer-li"><div class="t_spin_m">07</div><span id="minutes"></span>Minutes</li>
-                <li class="timer-li"><div class="t_spin">07</div><span id="seconds"></span>Seconds</li>
-              </ul>
-            </div>
-          </section>
-      
-          <!-- TIMER ENDS -->
-
+  
     <!--ABOUT-->
     <!-- <section> -->
     <div id="nit-about" class="nit-about-photo">
@@ -778,11 +758,24 @@ switch(timelinePage){
     </div>
 <!-- </section> -->
     <!--ABOUT END-->
+    <section>
+      <div class="container-fluid timer-container">
+        <!-- <h1>some heading:::</h1> -->
+        <ul>
+          <li class="timer-li"><div class="t_spin_d">07</div><span id="days"></span>days</li>
+          <li class="timer-li"><div class="t_spin_h">07</div><span id="hours"></span>Hours</li>
+          <li class="timer-li"><div class="t_spin_m">07</div><span id="minutes"></span>Minutes</li>
+          <li class="timer-li"><div class="t_spin">07</div><span id="seconds"></span>Seconds</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TIMER ENDS -->
 
     <!--MILESTONE-->
     <section>
       <div id="nit-milestone-about" class="nit-milestone-about">
-        <div class="section-title" style="text-align: center;background-color: #0b1c33; color: #0df5f3;padding-top: 70px;font-size: 60px;">METRICS</div>
+        <div class="section-title" style="text-align: center;background-image: linear-gradient(to top,#defcfe 0%, #fff 100%); color: #000000;padding-top: 70px;font-size: 60px;">METRICS</div>
         <div class="nit-inner">
           <div class="container">
             <div class="row">
@@ -823,7 +816,7 @@ switch(timelinePage){
                                 alt="teacher icon">
                               <div class="counter-text">
                                 <span class="nit-counter">28</span>
-                                <small>Hackathon</small>
+                                <small>Hours</small>
                               </div>
                             </div>
                           </div>
@@ -894,7 +887,7 @@ switch(timelinePage){
 
 <!--Schedule-->
 <section id="nit-timeline">
-  <div class="section-title" style="text-align: center;background-color: #0b1c33; color: #fff;padding-top: 70px;">TENTATIVE SCHEDULE</div>
+  <div class="section-title" style="text-align: center;background-image: linear-gradient(to top,#defcfe 0%, #fff 100%); color: #000;padding-top: 70px;">TENTATIVE SCHEDULE</div>
   <div class="page-content">
   <div class="wizard-v5-content">
     <div class="wizard-form">
@@ -1033,7 +1026,7 @@ switch(timelinePage){
                                </div>
                                <!-- Single Schedule Info -->
                                <div class="single-schedule-info">
-                                   <h6>Tech Talk</h6>
+                                   <h6>Workshop</h6>
                                    <p><i class="zmdi zmdi-calendar"></i> 18<sup>th</sup> Jan & 19<sup>th</sup> Jan</p>
                                    <!-- <p>by <span>Jeffrey Morales</span> / Ceo of Confer</p> -->
                                </div>
@@ -1428,7 +1421,7 @@ switch(timelinePage){
 <!--Schedule end-->
     <!-- MENTOR START MAIN -->
     <section class="mentors-section">
-      <div class="section-title" style="text-align: center;background: linear-gradient(90deg, rgba(247,246,249,1) 0%, rgba(236,237,240,1) 55%, rgba(212,217,218,1) 100%);">MENTORS</div>
+      <div class="section-title" style="text-align: center;background: #fff;">MENTORS</div>
       <div id="nit-speakers" class="nit-speakers nit-speakers2">
         <div class="nit-inner">
           <div class="container">
@@ -1637,7 +1630,7 @@ switch(timelinePage){
   </section>
     <!-- MENTOR END -->
     <section id="problem_statment">
-      <div class="section-title" style="background-color: #0b1c33;text-align: center; color: #fff;">PROBLEM STATEMENTS</div>
+      <div class="section-title" style="background-color: #fff;text-align: center; color: #000;">PROBLEM STATEMENTS</div>
     <div class="page">
       <div class="page__container">
         <!-- <a href="#popup-article" class="open-popup">open popup1</a>

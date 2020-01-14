@@ -96,7 +96,7 @@ body {
 .cn-button:hover,
 .cn-button:active,
 .cn-button:focus {
-  color: blueviolet;
+  color: rgb(255, 255, 255);
   outline: none;
 }
 

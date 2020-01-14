@@ -16,7 +16,8 @@ body {
 	-ms-align-items: center;
 	-moz-align-items: center;
 	-webkit-align-items: center;
-	background: #0b1c33;
+	/* background: #0b1c33; */
+	background-image: linear-gradient(to top,#fff 0%, #defcfe 100%);
 }
 .wizard-v5-content   {
 	width: 851px;
@@ -30,7 +31,7 @@ body {
 	-ms-border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	margin: 160px 0 115px;
+	margin: 90px 0 115px;
 	font-family: 'Nunito', sans-serif;
 	font-size: 18px;
 	font-weight: 400;

@@ -7644,7 +7644,7 @@ button:hover:after {
 
 @media (max-width:991px) {
     .nit-banner4 {
-        background-image: url("../../images/mobile_new.jpg");
+        background-image: url("../../images/landing_mobile.png");
         height: 100%; 
         background-position: initial;
         background-repeat: no-repeat;
@@ -9104,7 +9104,7 @@ button:hover:after {
 }
 
 .nit-about-photo {
-    background-image: url("../img/AboutUs.png");
+    background-image: url("../../images/about.png");
     height: 100%; 
     background-position: initial;
     background-repeat: no-repeat;
@@ -9113,7 +9113,7 @@ button:hover:after {
 }
 @media (max-width:991px) {
     .nit-about-photo {
-        background-image: url("../img/AboutUs-mobile.jpg");
+        background-image: url("../../images/about_m0bile.png");
         height: 100%; 
         background-position: initial;
         background-repeat: no-repeat;
@@ -9849,7 +9849,8 @@ button:hover:after {
 }
 
 .nit-milestone-about .nit-inner {
-    background: #0b1c33;
+    /* background: #0b1c33; */
+    background-image: linear-gradient(to top,#fff 0%, #defcfe 100%);
   /*  background: #0b1c33;*/
     padding: 8rem 0
 }
@@ -9865,7 +9866,7 @@ button:hover:after {
 }
 
 .nit-milestone .nit-counter-area img {
-    opacity: .4
+    opacity: 1
 }
 
 .nit-milestone .nit-counter-area i {
@@ -9894,14 +9895,14 @@ button:hover:after {
     font-size: 6.8rem;
     font-weight: 900;
     margin-bottom: 1rem;
-    color: #48C5BF;
+    color: rgb(255, 255, 255);
     text-shadow: 7px 0px 10px #000;
     font-style: italic;
 }
 
 .nit-milestone .nit-counter-area .counter-text small {
     font-family: Poppins, sans-serif;
-    /* color: #fff; */
+    color: #000 !important;
     font-size: 2rem;
     line-height: 3rem;
     font-weight: 400;
@@ -14385,7 +14386,7 @@ color: white;
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 100000;
     font-family: 'Nunito', sans-serif;
   }
   
@@ -14583,7 +14584,7 @@ color: white;
   .page{
     min-height: 100vh;
     display: flex;
-    background-color: #0b1c33;
+    background-image: #fff;
     font-family: 'Nunito', sans-serif;
   }
   
@@ -14632,7 +14633,7 @@ color: white;
     width: 300px;
     height: 300px;
     border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  /* box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22); */
     cursor: pointer;
     transition: 0.4s;
   }
@@ -14643,7 +14644,9 @@ color: white;
     border-radius: 40px;
     /* background: linear-gradient(135deg, #622774 0%,#c53364 100%); */
     /* background: linear-gradient(135deg, #F36265,#E91E63); */
-    background: linear-gradient(135deg, #E3E3E3 0%,#adbfd4 100%);
+    /* background: linear-gradient(135deg, #E3E3E3 0%,#adbfd4 100%); */
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     /* background: linear-gradient(270deg, #622774, #c53364); */
 /* background-size: 400% 400%;
 
@@ -14688,8 +14691,7 @@ animation: AnimationName 10s ease infinite; */
   
   .track_card:hover {
     transform: scale(0.9, 0.9);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-      -5px -5px 30px 15px rgba(0,0,0,0.22);
+    /* box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),  -5px -5px 30px 15px rgba(0,0,0,0.22); */
   }
   
   .title-white {
@@ -14744,32 +14746,66 @@ animation: AnimationName 10s ease infinite; */
       text-decoration: none;
       outline: none;
   }
-/* nav 
-nav ul{
-    float: right;
+  /* nav */
+  .header-logo ul{
+      z-index: -1;
+      margin-bottom: 0 !important;
+  }
+  .header-logo ul li{
+    display: inline-block;
+    padding: 20px;
+  }
+.nav-img1{
+    width: 50px;
+    height: 50px;
+}
+.nav-img2{
+    width: 200px;
+    height: 50px;
+}
+.nav-img3{
+    width: 200px;
+    height: 50px;
+}
+.nav-img4{
+    width: 200px;
+    height: 50px;
 }
 nav ul li {
     display:inline-block;
     padding: 20px;
     font-size: 20px;
   }
-  
-  nav ul li:hover {
-    background-color: #399077;
-  }
 
-  .handle {
-    width:100%;
-    background: #005c48;
-    text-align: left;
-    box-sizing: border-box;
-    padding: 15px 10px;
-    cursor:pointer;
-    color:white;
-    display:none
-  }
+
   
   @media screen and (max-width:600px) {
+    .header-logo ul li{
+        padding: 2px;
+      }
+      .nav-img1,.nav-img2{
+          float: left;
+      }
+      .nav-img3,.nav-img4{
+        float: left;
+    }
+    .nav-img1{
+        width: 30px;
+        height: 30px;
+    }
+    .nav-img2{
+        width: 100px;
+        height: 30px;
+    }
+    .nav-img3{
+        width: 100px;
+        height: 30px;
+    }
+    .nav-img4{
+        width: 100px;
+        height: 30px;
+    }
+      
     nav ul {
       max-height:0;
     }
@@ -14789,7 +14825,7 @@ nav ul li {
       display:block;
     }
   }
-  */
+ 
 /* campus */
 .w3-container{
     padding: 0 !important;

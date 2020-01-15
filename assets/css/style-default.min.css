@@ -7637,9 +7637,11 @@ button:hover:after {
 .nit-banner4 {
     background-image: url("../../images/desktop_FINAL1.png");
     height: 100%; 
-    background-position: initial;
+    /* background-position: initial; */
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 @media (max-width:991px) {
@@ -9113,7 +9115,7 @@ button:hover:after {
 }
 @media (max-width:991px) {
     .nit-about-photo {
-        background-image: url("../../images/about_m0bile.png");
+        background-image: url("../../images/about_m0bile.jpeg");
         height: 100%; 
         background-position: initial;
         background-repeat: no-repeat;
@@ -14888,6 +14890,9 @@ nav ul li {
     margin-bottom: 0 !important;
 }
 @media screen and (max-width:768px){
+    .campus-title{
+        text-align: center;
+    }
    .w3-modal{
        max-height: 300px;
    }
@@ -14910,4 +14915,8 @@ nav ul li {
     .imgbA,.imgbB,.imgbC,.imgbD{
       background-size: contain;
     }
+}
+.nav-img1,.nav-img2,.nav-img3,.nav-img4{
+    cursor: pointer;
+
 }

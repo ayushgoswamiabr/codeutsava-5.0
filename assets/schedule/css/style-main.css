@@ -50,6 +50,7 @@ body {
   font-size: 16px;
   position: relative;
   z-index: auto;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -1370,6 +1371,7 @@ input:required {
   display: inline-block;
   /*background-color:-webkit-linear-gradient(120deg, #48C5BF 24%, #228bc3bf 43%,#9F3869 77%);*/
   margin-top: 18em;
+  position: inherit;
 
 }
 

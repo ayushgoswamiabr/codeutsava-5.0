@@ -5,7 +5,7 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>Codeutsava 4.0</title>
+  <title>Codeutsava 5.0</title>
   <!-- BOOTSTRAP CSS -->
   <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all" />
 
@@ -390,15 +390,15 @@ switch(timelinePage){
       var distance = countDownDate - now;
 
       // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById('days').innerText = ((days < 10) ? "0" : "") + days,
-        document.getElementById('hours').innerText = ((hours < 10) ? "0" : "") + hours,
-        document.getElementById('minutes').innerText = ((minutes < 10) ? "0" : "") + minutes,
-        document.getElementById('seconds').innerText = ((seconds < 10) ? "0" : "") + seconds;
+        // document.getElementById('days').innerText = ((days < 10) ? "0" : "") + days,
+        // document.getElementById('hours').innerText = ((hours < 10) ? "0" : "") + hours,
+        // document.getElementById('minutes').innerText = ((minutes < 10) ? "0" : "") + minutes,
+        // document.getElementById('seconds').innerText = ((seconds < 10) ? "0" : "") + seconds;
       // If the count down is over, write some text 
       // if (distance < 0) {
       //   clearInterval(x);
@@ -422,9 +422,9 @@ switch(timelinePage){
       // }else{
       //   document.getElementsByClassName('t_spin_d')[0].style.transitionDuration = "1s";
       // }
-      document.getElementsByClassName('t_spin_m')[0].style.transform = "rotateZ("+(360-(seconds/60.0)*360.0)+"deg)";
-      document.getElementsByClassName('t_spin_h')[0].style.transform = "rotateZ("+(360-(minutes/60.0)*360.0)+"deg)";
-      document.getElementsByClassName('t_spin_d')[0].style.transform = "rotateZ("+(360-(hours/24.0)*360.0)+"deg)";
+      // document.getElementsByClassName('t_spin_m')[0].style.transform = "rotateZ("+(360-(seconds/60.0)*360.0)+"deg)";
+      // document.getElementsByClassName('t_spin_h')[0].style.transform = "rotateZ("+(360-(minutes/60.0)*360.0)+"deg)";
+      // document.getElementsByClassName('t_spin_d')[0].style.transform = "rotateZ("+(360-(hours/24.0)*360.0)+"deg)";
 
       // document.getElementsByClassName('t_spin_m')[0].style = ""
       // f = false;
@@ -2806,7 +2806,7 @@ model.
     <ul>
         <li style="font-size: 18px"><b>VENUE</b></li>
         <br/>
-        <li>18-19 JANUARY, 2020</li>
+        <li>COMING SOON</li>
         <li>National Institute Of Technology Raipur</li>
         <li>GE Road, Raipur, chhattisgarh - 492001</li>
         <br/>

@@ -9120,6 +9120,7 @@ button:hover:after {
 }
 .abouthead {
   color: #fff;
+  font-size: 36px !important;
 }
 .aboutusleft {
   display: flex;

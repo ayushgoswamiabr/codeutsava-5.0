@@ -7608,7 +7608,6 @@ button:hover:after {
   /* background-position: initial; */
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
 }
 
@@ -9112,6 +9111,32 @@ button:hover:after {
   }
 }
 
+.aboutussection {
+  background: #242a43;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  height: 100vh;
+}
+.aboutusleft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 50px;
+}
+.aboutusleft p {
+  color: #fff;
+  font-size: 2rem;
+}
+.aboutusright {
+  width: 50%;
+  background-image: url("/images/aboutusimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .nit-about-photo {
   background-image: url("../../images/about.png");
   height: 100%;
@@ -10352,6 +10377,20 @@ button:hover:after {
 }
 
 @media (max-width: 1199px) {
+  .aboutussection {
+    flex-direction: column;
+    height: auto;
+  }
+  .aboutusleft,
+  .aboutusright {
+    width: 100%;
+  }
+  .aboutusright {
+    background-image: url("/images/aboutusimg2.jpg");
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+  }
   .nit-tab .nit-nav,
   .nit-tab .nit-tab-content {
     float: left;
@@ -11784,6 +11823,7 @@ button:hover:after {
   -o-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  background-position: center;
 }
 
 .nit-countdowns3 .nit-inner {
@@ -14750,7 +14790,7 @@ section p {
   z-index: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 

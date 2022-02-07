@@ -9118,6 +9118,9 @@ button:hover:after {
   color: #fff !important;
   height: 100vh;
 }
+.abouthead {
+  color: #fff;
+}
 .aboutusleft {
   display: flex;
   flex-direction: column;

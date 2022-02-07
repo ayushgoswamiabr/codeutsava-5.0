@@ -9115,7 +9115,7 @@ button:hover:after {
   background: #242a43;
   display: flex;
   flex-direction: row;
-  color: #fff;
+  color: #fff !important;
   height: 100vh;
 }
 .aboutusleft {
@@ -9132,7 +9132,7 @@ button:hover:after {
 }
 .aboutusright {
   width: 50%;
-  background-image: url("/images/aboutusimg.jpg");
+  background-image: url("../../images/aboutusimg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -10385,8 +10385,11 @@ button:hover:after {
   .aboutusright {
     width: 100%;
   }
+  .aboutsleft h1 {
+    color: #fff;
+  }
   .aboutusright {
-    background-image: url("/images/aboutusimg2.jpg");
+    background-image: url("../../images/aboutusimg2.jpg");
     height: 70vh;
     background-size: cover;
     background-position: center;

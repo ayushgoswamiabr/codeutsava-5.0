@@ -14332,7 +14332,32 @@ blockquote.nit-testi-single:before {
   text-align: center;
   line-height: 2;
 }
+.spons-logo {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.spons-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.spons-inner-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 786px) {
+  .spons-row {
+    width: 100%;
+  }
+  .spons-inner-row {
+    flex-direction: column;
+  }
   .metrices-head {
     font-size: 4em;
   }

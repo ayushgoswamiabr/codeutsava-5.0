@@ -14526,13 +14526,19 @@ section p {
   padding: 50px;
   margin-bottom: 30px;
   display: inline-block;
-  border: 1px solid #ddd;
-  background: #fff;
+  /* border: 1px solid #ddd; */
+  background: transparent;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .spons-logo:hover {
   transform: scale(1.05);
+}
+.brochure-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* prize */
 .prize-section {

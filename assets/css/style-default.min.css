@@ -14988,7 +14988,11 @@ nav ul li {
   padding: 20px;
   font-size: 20px;
 }
-
+.container h1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
 @media screen and (max-width: 768px) and (min-width: 500px) {
   .background-filler {
     height: 100px;
@@ -15004,6 +15008,9 @@ nav ul li {
   .background-filler {
     height: 50px;
     background-color: #022330;
+  }
+  .container h1 {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 600px) {

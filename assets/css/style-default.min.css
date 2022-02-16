@@ -9142,7 +9142,6 @@ button:hover:after {
 .aboutusleft p {
   color: #fff;
   font-size: 2rem;
-  line-height: 25px;
 }
 .aboutusright {
   width: 50%;
@@ -10398,6 +10397,9 @@ button:hover:after {
   .aboutusleft,
   .aboutusright {
     width: 100%;
+  }
+  .aboutusleft p {
+    line-height: 30px;
   }
   .aboutsleft h1 {
     color: #fff;
@@ -14998,11 +15000,11 @@ nav ul li {
     height: 100px;
     background-color: #022330;
   }
-  .nit-banner4 {
+  /* .nit-banner4 {
     background-size: contain;
     height: 300%;
     margin: -400px 0;
-  }
+  } */
 }
 @media screen and (max-width: 500px) {
   .background-filler {

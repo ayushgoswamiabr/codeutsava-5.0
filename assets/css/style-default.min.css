@@ -7610,7 +7610,12 @@ button:hover:after {
   background-size: cover;
   background-position: center;
 }
-
+.wrapper_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 600px;
+}
 @media (max-width: 991px) {
   .nit-banner4 {
     background-image: url("../../images/landing_mobile.png");
@@ -7618,6 +7623,9 @@ button:hover:after {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .wrapper_button {
+    padding-top: 300px;
   }
 }
 
@@ -9121,6 +9129,7 @@ button:hover:after {
 .abouthead {
   color: #fff;
   font-size: 36px !important;
+  margin-top: 50px;
 }
 .aboutusleft {
   display: flex;

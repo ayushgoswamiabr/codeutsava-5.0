@@ -1,5 +1,5 @@
-@media screen and (min-width: 786px){
-.footer{
+@media screen and (min-width: 786px) {
+  .footer {
     width: 100%;
     height: 450px;
     margin-top: -25px;
@@ -8,58 +8,57 @@
     color: #ffffff;
     padding-left: 18%;
     padding-top: 100px;
-    border-top: 1px solid rgba(255, 255, 255, .1); 
-    font-family: 'Montserrat', sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
+  }
 }
-}
-footer:after{
-    content: "";
-    display: block;
-    clear: both;
-}
-
-footer ul{
-    float: left;
-    padding: 0;
-    width: 20%;
-    list-style-type: none;
-    
+footer:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-footer a{
-    color: #eee;
-    text-decoration: none;
+footer ul {
+  float: left;
+  padding: 0;
+  width: 20%;
+  list-style-type: none;
 }
 
-footer li{
-    margin: 10px 0;
+footer a {
+  color: #eee;
+  text-decoration: none;
 }
 
-li a{
-    border-radius: 60%;
-    color: #ffffff;
-    text-decoration: none;
+footer li {
+  margin: 10px 0;
+}
+
+li a {
+  border-radius: 60%;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 li:hover a {
-    text-decoration: none;
-    color: #a0b5be;
+  text-decoration: none;
+  color: #a0b5be;
 }
 
 .fab {
-    padding: 13px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: none;
-    background-color: #eee;
-    display: inline-block;
-    border-radius: 50%;
-    margin-left: 3px;
+  padding: 13px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #eee;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 3px;
 }
 
 .fab:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -68,8 +67,8 @@ li:hover a {
 }
 
 .fa-instagram {
-    background: #eee;
-    color: #393939;
+  background: #eee;
+  color: #393939;
 }
 
 .fa-twitter {
@@ -82,7 +81,7 @@ li:hover a {
   color: #393939;
 }
 
-/*mediaQueries*/  
+/*mediaQueries*/
 
 /*for small Laptops/PC*/
 
@@ -99,24 +98,21 @@ li:hover a {
     }
 } */
 
-
-
 /*forMobiles*/
-@media screen and (max-width: 786px)
-{
-    footer{
-        color: #ffffff;
-        width: 100%;
-        height: 915px;
-        font-family: 'Montserrat', sans-serif;
-        background-image: url(background-mob2.jpg);
-        background-repeat: no-repeat;
-        font-weight: bolder;
-        background-size: cover;
-    }
-    
-    footer ul {
-        width: 98%;
-        text-align: center;
-    }
+@media screen and (max-width: 786px) {
+  footer {
+    color: #ffffff;
+    width: 100%;
+    height: 1000px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(background-mob2.jpg);
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    background-size: cover;
+  }
+
+  footer ul {
+    width: 98%;
+    text-align: center;
+  }
 }

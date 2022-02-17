@@ -7603,27 +7603,34 @@ button:hover:after {
 }
 
 .nit-banner4 {
-  background-image: url("../../images/desktop_FINAL1.jpg");
-  height: 100%;
-  /* background-position: initial; */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: rgb(36, 42, 68);
+  background: linear-gradient(
+    113deg,
+    rgba(36, 42, 68, 1) 50%,
+    rgba(2, 35, 48, 1) 50%
+  );
+  height: 100vh;
+  padding-top: 100px;
 }
-.wrapper_button {
+.nit-banner4-right {
+  width: 50%;
+}
+.nit-banner4-left {
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 600px;
+}
+.nit-banner4-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nit-banner4-flex img {
+  height: 500px;
 }
 @media (max-width: 991px) {
-  .nit-banner4 {
-    background-image: url("../../images/landing_mobile.png");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   .wrapper_button {
     padding-top: 300px;
   }
@@ -10409,6 +10416,25 @@ button:hover:after {
     height: 70vh;
     background-size: cover;
     background-position: center;
+  }
+  .nit-banner4 {
+    background: #242a44 !important;
+    height: fit-content;
+    padding-top: 0;
+  }
+  .nit-banner4-flex {
+    flex-direction: column;
+  }
+  .nit-banner4-left,
+  .nit-banner4-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nit-banner4-left img,
+  .nit-banner4-right img {
+    height: 350px;
   }
   .nit-tab .nit-nav,
   .nit-tab .nit-tab-content {
@@ -14526,7 +14552,6 @@ section p {
   max-width: 300px;
   text-align: center;
   border-radius: 4px;
-  padding: 50px;
   margin-bottom: 30px;
   display: inline-block;
   /* border: 1px solid #ddd; */

@@ -173,7 +173,7 @@ table th {
   position: fixed !important;
   padding: 10px;
   background-color: #253247;
-  z-index: 2;
+  z-index: 9999;
 }
 .navbar-home-links {
   display: flex;

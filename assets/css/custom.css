@@ -206,13 +206,13 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
+/* prize section */
 
 .prize-list {
   display: flex;
   align-items: center;
   justify-content:center;
   flex-direction: column;
-  /* padding: 2rem;  */
 }
 
 .prize-list .prize-mid {
@@ -221,11 +221,6 @@ ul.timeline > li:before {
   justify-content:space-around;
   gap: 4rem;
   margin: 2rem 0;
-}
-
-.prize-list .prize-mid .prize-mid-inner{
-  
-  /* gap: 10px; */
 }
 
 .prize-list .prize-list-inner{
@@ -238,7 +233,6 @@ ul.timeline > li:before {
 .prize-list ul.prize-items li {
   position: relative;
   padding-left: 25px;
-  /* margin: 1rem; */
 }
 
 .prize-list ul.prize-items li::before {
@@ -257,10 +251,8 @@ ul.timeline > li:before {
 }
 
 @media only screen and (max-width: 1060px) {
-  
     .prize-list .prize-mid {
       flex-direction: column;
-      /* margin: 0; */
       gap: 2rem;
     }
 }
@@ -268,9 +260,9 @@ ul.timeline > li:before {
 @media only screen and (max-width: 550px) {
   .prize-list .prize-list-inner{
     width: 30rem;
-    
   }
 }
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/

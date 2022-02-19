@@ -206,6 +206,63 @@ ul.timeline > li:before {
   z-index: 400;
 }
 
+/* prize section */
+
+.prize-list {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+}
+
+.prize-list .prize-mid {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  gap: 4rem;
+  margin: 2rem 0;
+}
+
+.prize-list .prize-list-inner{
+  padding:2rem;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  border-radius: 1rem;
+  width: 50rem;
+}
+
+.prize-list ul.prize-items li {
+  position: relative;
+  padding-left: 25px;
+}
+
+.prize-list ul.prize-items li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: gray;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 1060px) {
+    .prize-list .prize-mid {
+      flex-direction: column;
+      gap: 2rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+  .prize-list .prize-list-inner{
+    width: 30rem;
+  }
+}
+
 /*--------------------------------------------------------------
 # F.A.Q Section
 --------------------------------------------------------------*/

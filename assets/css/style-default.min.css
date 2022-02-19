@@ -167,7 +167,48 @@ table th {
 .nit-table tbody tr th:hover {
   background: rgba(85, 75, 185, 0.1);
 }
-
+.navbar-home {
+  width: 100%;
+  height: 90px;
+  position: fixed !important;
+  padding: 10px;
+  background-color: #253247;
+  z-index: 2;
+}
+.navbar-home-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar-home-links li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .nav-img1 {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .navbar-home-links li {
+    margin-left: 8px;
+    font-size: 1.4rem !important;
+  }
+  .nav-img2 {
+    width: 100px !important;
+    height: 30px !important;
+  }
+  .nav-img4 {
+    width: 80px !important;
+    height: 40px !important;
+  }
+  .navbar-home {
+    height: 70px;
+  }
+  .nit-banner4-left {
+    padding-top: 70px;
+  }
+}
 a {
   color: #483fa1;
 }
@@ -15001,8 +15042,8 @@ animation: AnimationName 10s ease infinite; */
   padding: 20px;
 }
 .nav-img1 {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 .nav-img2 {
   width: 200px;
@@ -15052,31 +15093,6 @@ nav ul li {
   }
   .header-logo ul li {
     padding: 5px;
-  }
-  .nav-img1,
-  .nav-img2 {
-    float: left;
-  }
-  .nav-img3,
-  .nav-img4 {
-    float: left;
-  }
-  .nav-img1 {
-    width: 30px;
-    height: 30px;
-  }
-  .nav-img2 {
-    width: 100px;
-    height: 30px;
-  }
-  .nav-img3 {
-    width: 90px;
-    height: 30px;
-  }
-  .nav-img4 {
-    margin-top: 5px;
-    width: 80px;
-    height: 32px;
   }
 
   nav ul {

@@ -174,11 +174,20 @@ table th {
   padding: 10px;
   background-color: #253247;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-home-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .navbar-home-links {
   display: flex;
   align-items: center;
   list-style: none;
+  width: 95%;
 }
 .navbar-home-links li {
   display: inline-block;
@@ -15007,6 +15016,7 @@ section p {
 .nav-img1 {
   width: 70px;
   height: 70px;
+  color: #fff !important;
 }
 .nav-img2 {
   width: 200px;

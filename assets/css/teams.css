@@ -19,6 +19,11 @@
   width: 200px;
   height: 50px;
 }
+.nav-img5 {
+  width: 140px;
+  padding: 0 10px;
+  height: 70px;
+}
 .nav-img1 {
   width: 70px;
   height: 70px;
@@ -187,18 +192,23 @@
     width: 40px;
     height: 40px;
   }
+  .nav-img5 {
+    width: 80px;
+    height: 35px;
+  }
   .navbar-links li {
     margin-left: 5px;
     font-size: 0.9rem;
   }
   .nav-img2 {
-    width: 100px;
+    width: 80px;
     height: 30px;
   }
   .nav-img4 {
-    width: 80px;
-    height: 40px;
+    width: 60px;
+    height: 30px;
   }
+
   .navbar {
     height: 70px;
     padding: 0 10px;

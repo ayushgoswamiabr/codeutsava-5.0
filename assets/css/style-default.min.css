@@ -190,7 +190,7 @@ table th {
   display: flex;
   align-items: center;
   list-style: none;
-  width: 95%;
+  width: 90%;
 }
 .navbar-home-links li {
   display: inline-block;
@@ -199,7 +199,7 @@ table th {
 }
 @media screen and (max-width: 768px) {
   .nav-img1 {
-    width: 40px !important;
+    width: 50px !important;
     height: 40px !important;
   }
   .navbar-home-links li {
@@ -207,12 +207,16 @@ table th {
     font-size: 1.4rem !important;
   }
   .nav-img2 {
-    width: 100px !important;
+    width: 80px !important;
     height: 30px !important;
   }
   .nav-img4 {
-    width: 80px !important;
-    height: 40px !important;
+    width: 60px !important;
+    height: 30px !important;
+  }
+  .nav-img6 {
+    width: 141px !important;
+    height: 35px !important;
   }
   .navbar-home {
     height: 70px;
@@ -14428,6 +14432,12 @@ blockquote.nit-testi-single:before {
   justify-content: center;
   align-items: center;
 }
+.spons-main {
+  transform: scale(1.2);
+}
+.spons-main:hover {
+  transform: scale(1.25) !important;
+}
 @media screen and (max-width: 768px) {
   .spons-logo {
     height: 230px !important;
@@ -15037,8 +15047,13 @@ section p {
   height: 50px;
 }
 .nav-img4 {
-  width: 150px;
+  width: 170px;
   height: 60px;
+}
+.nav-img6 {
+  width: 160px;
+  padding: 0 10px;
+  height: 70px;
 }
 nav ul li {
   display: inline-block;

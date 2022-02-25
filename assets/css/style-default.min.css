@@ -197,7 +197,61 @@ table th {
   margin-left: 20px;
   font-size: 2rem;
 }
+.teams-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+}
+.teams-grid p {
+  color: #000;
+}
+.shortlisted-teams {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.timeline-item {
+  width: 90%;
+  margin: auto;
+  border: 1px solid #444675;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+  transition: 200ms border ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.timeline-item:hover {
+  border-color: #9f3868;
+  transition: 200ms border ease-in-out;
+}
+.timeline-item p,
+.timeline-item h4,
+.timeline-item span {
+  color: #fff;
+}
 @media screen and (max-width: 768px) {
+  .teams-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+  }
+  .teams-grid p {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+  .timeline-item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .timeline-item p,
+  .timeline-item h4,
+  .timeline-item span {
+    font-size: 1.5rem;
+  }
   .nav-img1 {
     width: 50px !important;
     height: 40px !important;

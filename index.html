@@ -320,8 +320,7 @@
       }
       @media screen and (max-width: 600px) {
         .next_prev {
-          padding-left: 70px;
-          padding-right: 25px;
+          padding: 0;
         }
       }
     </style>
@@ -661,6 +660,13 @@
       </div>
       <div class="aboutusright"></div>
     </div>
+    <!-- <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/M-jnnbyUf2I"
+      frameborder="0"
+      allowfullscreen
+    ></iframe> -->
     <!--MILESTONE-->
     <section>
       <div id="nit-milestone-about" class="nit-milestone-about">
@@ -932,166 +938,83 @@
                   <span class="step-text">Events Timeline</span>
                 </h2>
                 <section>
-                  <div class="container" id="nit-timeline">
-                    <h1>Will Be Released Soon</h1>
+                  <div class="next_prev">
+                    <div class="prev" id="prev" onclick="prev()">
+                      26 February
+                    </div>
+
+                    <div class="next" id="next" onclick="next()">
+                      27 February
+                    </div>
                   </div>
+
+                  <div id="timeline_1">
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        11:30AM
+                      </span>
+                      <h4>INAUGURATION CEREMONY</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        12:00PM
+                      </span>
+                      <h4>HACKATHON BEGINS</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        04:00PM
+                      </span>
+                      <h4>CODEASE SHORTEST CODING COMPETITION</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        06:00PM
+                      </span>
+                      <h4>UNKAHI 16.0:THE OPEN MIC SESSION</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        08:00PM
+                      </span>
+                      <h4>FIRST ROUND OF JUDGEMENT</h4>
+                    </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        11:00PM
+                      </span>
+                      <h4>VALORANT, PRELIMS</h4>
+                    </div>
+                  </div>
+
                   <!-- second -->
-                  <div class="timeline" id="timeline_2" style="display: none">
-                    <div class="timeline-month">
-                      19 January
-                      <span>3 Entries</span>
+                  <div id="timeline_2" style="display: none">
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        02:00PM
+                      </span>
+                      <h4>FINAL ROUND OF JUDGEMENT STARTS</h4>
                     </div>
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        09:00<sup><small>AM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Breakfast
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        05:00PM
+                      </span>
+                      <h4>VOTE OF THANKS & DECLARATION OF RESULTS</h4>
                     </div>
-
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        10:30<sup><small>AM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-8">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Tech-Talk #IOT_and_integration_with_cloud
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        11:00<sup><small>AM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Judging (R-2)
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        12:30<sup><small>PM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Lunch
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        3:00<sup><small>PM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Final Judging (R-3)
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        03:30<sup><small>PM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Hackathon ends
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="timeline-section">
-                      <div class="timeline-date">
-                        04:30<sup><small>PM</small></sup>
-                      </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="timeline-box">
-                            <div class="box-title">
-                              <i
-                                class="fa fa-snowflake-o text-success"
-                                aria-hidden="true"
-                              ></i
-                              >Valedictory function
-                            </div>
-                            <div class="box-content">
-                              <div class="box-item"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="timeline-item">
+                      <span style="display: flex">
+                        <i class="material-icons">access_time</i>
+                        08:00PM
+                      </span>
+                      <h4>VALORANT FINALS</h4>
                     </div>
                   </div>
                   <!-- timeline starts -->
@@ -1496,6 +1419,33 @@
           </p>
           <a href="#problem_statmentnew" class="popup__close">close</a>
         </div>
+      </div>
+      <center><h1 class="shortlisted-teams">Sortlisted Teams</h1></center>
+      <div class="teams-grid">
+        <p>IMMORTALS</p>
+        <p>SILENCER LOVER</p>
+        <p>TEAM CHEEMS</p>
+        <p>FALLEN KNIGHTS</p>
+        <p>DAILY DEBUGGERS</p>
+        <p>NERD HERD</p>
+        <p>FITR</p>
+        <p>H20</p>
+        <p>BITSET</p>
+        <p>RUDRANSH SHARMA</p>
+        <p>DCODER</p>
+        <p>GRIFFIN</p>
+        <p>ABRACODEABRA</p>
+        <p>ASTUTE FORCE</p>
+        <p>PERCERPTRONS</p>
+        <p>HARD CODERS</p>
+        <p>CODE-N-CREATE</p>
+        <p>STRAW HATS</p>
+        <p>ABHISARGAH</p>
+        <p>JAVACRPYTXD</p>
+        <p>VINCI CODE</p>
+        <p>TEAM DYAD</p>
+        <p>HACKBUDDIES</p>
+        <p>ALPHA</p>
       </div>
     </section>
     <!-- prize section -->

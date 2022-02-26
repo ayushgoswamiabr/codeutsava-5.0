@@ -14487,12 +14487,15 @@ blockquote.nit-testi-single:before {
   align-items: center;
 }
 .spons-main {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 .spons-main:hover {
-  transform: scale(1.25) !important;
+  transform: scale(1.55) !important;
 }
 @media screen and (max-width: 768px) {
+  .spons-main {
+    transform: scale(1.2);
+  }
   .spons-logo {
     height: 230px !important;
     margin-bottom: 0 !important;

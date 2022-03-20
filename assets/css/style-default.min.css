@@ -15185,7 +15185,9 @@ nav ul li {
   .header-logo ul li {
     padding: 5px;
   }
-
+  #ourteam {
+    display: none;
+  }
   nav ul {
     max-height: 0;
   }

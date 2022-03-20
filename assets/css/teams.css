@@ -163,6 +163,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #ourteam {
+    display: none;
+  }
   .team-card,
   .team-card-3rdyear {
     width: 90%;
